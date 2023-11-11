@@ -1,0 +1,207 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Profil Saya</title>
+    <style>
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #bdd5ea;
+            color: #577399;
+        }
+
+        header {
+            background-color: #7a8591;
+            color: #fff;
+            text-align: center;
+            padding: 2em 0;
+        }
+
+        .container {
+            padding: 20px;
+            background-color: #fff;
+            border-radius: 8px;
+            box-shadow: 0 0 20px rgba(0, 0, 0, 0.1);
+            overflow: hidden;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+        }
+
+        .profile-img {
+            width: 200px;
+            height: 200px;
+            border-radius: 50%;
+            overflow: hidden;
+            margin-bottom: 20px;
+        }
+
+        .profile-img img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+        }
+
+        nav {
+            margin-bottom: 10px;
+        }
+
+        nav ul {
+            list-style-type: none;
+            padding: 0;
+            margin: 0;
+            display: flex;
+            justify-content: space-around;
+            width: 100%;
+        }
+
+        nav li {
+            flex: 1;
+            text-align: center;
+            padding: 10px;
+            background-color: #343a40;
+            color: #fff;
+            cursor: pointer;
+        }
+
+        .content {
+            width: 100%;
+            box-sizing: border-box;
+        }
+
+        h1 {
+            margin-bottom: 5px;
+            color: #333;
+        }
+
+        h2 {
+            color: #555;
+        }
+
+        .section {
+            margin-top: 30px;
+        }
+
+        .section h3 {
+            color: #333;
+            border-bottom: 2px solid #343a40;
+            padding-bottom: 5px;
+            margin-bottom: 10px;
+        }
+
+        .section ul {
+            list-style-type: none;
+            padding: 0;
+            text-align: left;
+        }
+
+        .section li {
+            margin-bottom: 10px;
+        }
+
+        .section p {
+            line-height: 1.6;
+            text-align: justify;
+        }
+
+        footer {
+            background-color: #343a40;
+            color: #fff;
+            text-align: center;
+            padding: 1em 0;
+            border-radius: 8px;
+            width: 100%;
+        }
+
+        footer a {
+            color: #fff;
+            text-decoration: none;
+        }
+
+        footer a:hover {
+            text-decoration: underline;
+        }
+    </style>
+</head>
+<body>
+
+    <header>
+        <h1>Profil Saya</h1>
+        <h2>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quisque dignissim lorem vel eleifend. Integer bibendum fringilla leo, ac luctus felis efficitur non. Sed volutpat ut elit vel porta. Sed bibendum, libero vel hendrerit pellentesque, lorem arcu feugiat justo, eu scelerisque sem purus eget lectus. Nulla varius ante et tristique efficitur. Cras tincidunt eget odio eu laoreet. Vivamus eget ex nec lorem fringilla congue. Sed fermentum auctor metus, at finibus diam vestibulum sit amet. Vivamus a urna a ex interdum lacinia. Donec vel velit nec tellus lacinia varius.
+        </h2>
+    </header>
+
+    <div class="container">
+        <div class="profile-img">
+            <img src="assets/hacker.png" alt="Profil Saya">
+        </div>
+
+        <nav>
+            <ul>
+                <li onclick="showSection('education')">Pendidikan</li>
+                <li onclick="showSection('experience')">Pengalaman Kerja</li>
+                <li onclick="showSection('skills')">Keterampilan</li>
+                <li onclick="showSection('contact')">Kontak</li>
+            </ul>
+        </nav>
+
+        <div class="content">
+            <div id="education" class="section">
+                <h3>Pendidikan</h3>
+                <ul>
+                    <li><strong>Lorem ipsum dolor sit amet</strong> - lorem ipsum</li>
+                </ul>
+                <ul>
+                    <li><strong>Lorem ipsum dolor sit amet</strong> - lorem ipsum</li>
+                </ul>
+            </div>
+
+            <div id="experience" class="section">
+                <h3>Pengalaman Kerja</h3>
+                <ul>
+                    <li><strong>Lorem ipsum dolor sit amet</strong> - lorem ipsum</li>
+                    <li><strong>Lorem ipsum dolor sit amet</strong> - lorem ipsum</li>
+                    <li><strong>Lorem ipsum dolor sit amet</strong> - lorem ipsum</li>
+                </ul>
+            </div>
+
+            <div id="skills" class="section">
+                <h3>Keterampilan</h3>
+                <ul>
+                    <li><strong>Lorem ipsum dolor sit amet</strong> - lorem ipsum</li>
+                    <li><strong>Lorem ipsum dolor sit amet</strong> - lorem ipsum</li>
+                    <li><strong>Lorem ipsum dolor sit amet</strong> - lorem ipsum</li>
+                    <li><strong>Lorem ipsum dolor sit amet</strong> - lorem ipsum</li>
+                </ul>
+            </div>
+
+            <div id="contact" class="section">
+                <h3>Kontak</h3>
+                <p>Email: lorem.ipsum@example.com</p>
+                <p>LinkedIn: linkedin.com/in/loremipsum</p>
+                <p>GitHub: github.com/loremipsum</p>
+            </div>
+        </div>
+    </div>
+
+    <footer>
+        <p>Hak Cipta &copy; 2023 TJKT | Didesain oleh <a href="/prototye 1/test.html" target="_blank">Kami Bersama</a></p>
+    </footer>
+
+    <script>
+        function showSection(sectionId) {
+            // Hide all sections
+            document.querySelectorAll('.section').forEach(function(section) {
+                section.style.display = 'none';
+            });
+
+            // Show the selected section
+            document.getElementById(sectionId).style.display = 'block';
+        }
+    </script>
+
+</body>
+</html>

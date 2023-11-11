@@ -1,0 +1,223 @@
+/* General Styles */
+body {
+  font-size: 16px;
+}
+
+@media only screen and (max-width: 600px) {
+  body {
+    font-size: 14px;
+  }
+}
+
+h1 {
+  font-size: 2em;
+}
+
+p {
+  font-size: 1.2em;
+}
+
+@media only screen and (max-width: 600px) {
+  p {
+    font-size: 1em;
+  }
+}
+
+body {
+  margin: 0;
+  padding: 0;
+  font-family: 'Arial', sans-serif;
+  background-color: #ffffff;
+  }
+  
+  header {
+    background-color: #577399;
+    color: #7a8591;
+    padding: 20px;
+  }
+  
+  nav ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+  }
+  
+  nav ul li {
+    display: inline-block;
+    margin-right: 20px;
+  }
+  
+  nav ul li a {
+    color: #fff;
+    text-decoration: none;
+  }
+  
+  .main {
+    padding: 40px;
+  }
+  
+  .hero-beranda {
+    text-align: center;
+  }
+  
+  .hero-beranda h1 {
+    color: #666;
+  }
+  
+  .style-text-beranda {
+    line-height: 1.6;
+    text-align: center;
+  }
+  
+  .socialLogo {
+    margin-top: 20px;
+    display: flex;
+    justify-content: center;
+  }
+  
+  .socialLogo img {
+    width: 50px;
+    margin: 0 10px;
+  }
+
+    .image-container img {
+    max-width: 100%;
+    border-radius: 5%;
+    margin-bottom: 20px;
+  }
+  
+/* galery */ 
+
+.image-gallery {
+  text-align: center;
+  margin: 20px auto; /* Menengahkan galeri gambar */
+}
+
+.image-gallery img {
+  max-width: 100%;
+  height: auto;
+  margin: 10px;
+  border-radius: 8px; /* Opsional: Menambahkan sudut melengkung pada gambar */
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Opsional: Menambahkan bayangan pada gambar */
+}
+
+/* end of galery*/
+  .btn {
+    display: inline-block;
+    padding: 5px 10px;
+    background-color: #333;
+    color: #fff;
+    text-decoration: none;
+    border-radius: 5px;
+  }
+
+  /* laman awal antara header dan main */
+  .mainpage-image {
+    position: relative;
+  }
+
+  .mainpage-image img {
+    max-width: 100%;
+    border-radius: 5%;
+    margin-bottom: 20px;
+  }
+
+  .text-overlay {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+    color: white; /* Ubah warna teks sesuai kebutuhan */
+}
+   
+  .text-header {
+    font-size: 2.2em;
+    color: #7a8591;
+  }
+
+    /* akhir dari laman awal antara header dan main */
+/*
+  footer {
+    background-color: #577399;
+    color: #fff;
+    padding: 20px;
+    text-align: center;
+}
+*/
+
+/* Gaya footer */
+footer {
+  background-color: #577399;
+  color: #fff;
+  padding: 30px 0;
+}
+
+.container {
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.row {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.col-md-4 {
+  flex: 0 0 33.3333%;
+  max-width: 33.3333%;
+  padding: 0 15px;
+  box-sizing: border-box;
+}
+
+/* Gaya tautan */
+a {
+  color: #fff;
+  text-decoration: none;
+}
+
+a:hover {
+  text-decoration: underline;
+}
+
+/* Gaya sosial media ikon */
+.social-icons {
+  list-style: none;
+  padding: 0;
+  margin: 10px 0 0;
+}
+
+.social-icons li {
+  display: inline-block;
+  margin-right: 10px;
+}
+
+.social-icons a {
+  color: #fff;
+  font-size: 24px;
+}
+
+/* Gaya garis pemisah */
+hr {
+  border-color: #577399;
+  margin: 20px 0;
+}
+
+/* Gaya hak cipta */
+.text-center {
+  text-align: center;
+  font-size: 14px;
+}
+
+/* Gaya responsif */
+@media only screen and (min-width: 768px) {
+  .col-md-4 {
+    flex: 0 0 33.3333%;
+    max-width: 33.3333%;
+  }
+}
+
+/* Elemen di luar footer */
+main {
+  min-height: 100vh;
+}

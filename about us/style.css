@@ -1,0 +1,146 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    background-color: #f4f4f4; /* Warna latar belakang */
+}
+
+header {
+    background-color: #577399;
+    color: #7a8591;
+    padding: 20px;
+  }
+  
+  nav ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+  }
+  
+  nav ul li {
+    display: inline-block;
+    margin-right: 20px;
+  }
+  
+  nav ul li a {
+    color: #fff;
+    text-decoration: none;
+  }
+
+.container {
+    width: 80%;
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 1em;
+}
+
+.about-section {
+    background-color: #fff; /* Warna latar belakang bagian About */
+    padding: 2em;
+    margin-top: 20px;
+}
+
+.about-section img {
+    max-width: 100%;
+    height: auto;
+    transform: rotate(-5deg); /* Gambar miring ke samping */
+}
+
+.vision-mission {
+    background-color: #e0e0e0; /* Warna latar belakang bagian Visi dan Misi */
+    padding: 2em;
+    margin-top: 20px;
+}
+
+.team-story {
+    margin-top: 20px;
+}
+
+@media (max-width: 600px) {
+    body {
+        font-size: 14px;
+    }
+
+    header {
+        font-size: 1.5em;
+    }
+}
+
+/* Footer disini */
+footer {
+    background-color: #577399;
+    color: #fff;
+    padding: 30px 0;
+  }
+  
+  .container {
+    max-width: 1200px;
+    margin: 0 auto;
+  }
+  
+  .row {
+    display: flex;
+    flex-wrap: wrap;
+  }
+  
+  .col-md-4 {
+    flex: 0 0 33.3333%;
+    max-width: 33.3333%;
+    padding: 0 15px;
+    box-sizing: border-box;
+  }
+  
+  /* Gaya tautan */
+  a {
+    color: #fff;
+    text-decoration: none;
+  }
+  
+  a:hover {
+    text-decoration: underline;
+  }
+  
+  /* Gaya sosial media ikon */
+  .social-icons {
+    list-style: none;
+    padding: 0;
+    margin: 10px 0 0;
+  }
+  
+  .social-icons li {
+    display: inline-block;
+    margin-right: 10px;
+  }
+  
+  .social-icons a {
+    color: #fff;
+    font-size: 24px;
+  }
+  
+  /* Gaya garis pemisah */
+  hr {
+    border-color: #577399;
+    margin: 20px 0;
+  }
+  
+  /* Gaya hak cipta */
+  .text-center {
+    text-align: center;
+    font-size: 14px;
+  }
+  
+  /* Gaya responsif */
+  @media only screen and (min-width: 768px) {
+    .col-md-4 {
+      flex: 0 0 33.3333%;
+      max-width: 33.3333%;
+    }
+  }
+  
+  /* Elemen di luar footer */
+  main {
+    min-height: 100vh;
+  }
+
+/* akhir dari footer */
