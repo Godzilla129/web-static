@@ -55,42 +55,45 @@ body {
 /* end */
 /* social media */
 
-.team {
-  max-width: 800px;
-  margin: 20px auto;
-  padding: 20px;
+body {
+  font-family: Arial, sans-serif;
+  margin: 0;
+}
+
+.profile-container {
   display: flex;
-  justify-content: space-around;
+  align-items: center;
+  margin-bottom: 20px;
 }
 
-.team-member {
-  text-align: center;
+.profile-left {
+  flex: 1;
+  padding: 10px;
+  text-align: center; /* Agar gambar dan teks berada di tengah */
 }
 
-.social-icons {
-  margin-top: 10px;
+.profile-left img {
+  width: 150px; /* Sesuaikan ukuran gambar sesuai kebutuhan Anda */
+  height: 150px; /* Sesuaikan ukuran gambar sesuai kebutuhan Anda */
+  object-fit: cover; /* Memastikan gambar mempertahankan aspek ratio dan tidak terdistorsi */
+  border-radius: 50%; /* Membuat gambar menjadi bulat */
 }
 
-.icon {
-  display: inline-block;
+.profile-right {
+  flex: 1;
+  padding: 10px;
+}
+
+.profile-right h2 {
+  margin-bottom: 10px;
+}
+
+.social-media img {
   width: 30px;
-  height: 30px;
-  margin-right: 10px;
-  background-size: cover;
+  margin-right: 5px;
 }
 
-.facebook {
-  background-image: url('facebook-icon.png');
-}
-
-.twitter {
-  background-image: url('twitter-icon.png');
-}
-
-.instagram {
-  background-image: url('instagram-icon.png');
-}
-
+/* Add additional styling as needed */
 /* end */
   /* Footer disini */
 footer {

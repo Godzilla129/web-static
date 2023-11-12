@@ -14,11 +14,27 @@
         }
 
         header {
-            background-color: #7a8591;
-            color: #fff;
-            text-align: center;
-            padding: 2em 0;
+            background-color: #577399;
+            color: #7a8591;
+            padding: 20px;
         }
+  
+        nav ul {
+            list-style: none;
+            padding: 0;
+            margin: 0;
+        }
+  
+        nav ul li {
+            display: inline-block;
+            margin-right: 20px;
+        }
+  
+        nav ul li a {
+            color: #fff;
+            text-decoration: none;
+        }
+  
 
         .container {
             padding: 20px;
@@ -45,6 +61,7 @@
             object-fit: cover;
         }
 
+        /*
         nav {
             margin-bottom: 10px;
         }
@@ -62,10 +79,11 @@
             flex: 1;
             text-align: center;
             padding: 10px;
-            background-color: #343a40;
+            background-color: #577399;
             color: #fff;
             cursor: pointer;
         }
+        */
 
         .content {
             width: 100%;
@@ -108,30 +126,92 @@
         }
 
         footer {
-            background-color: #343a40;
-            color: #fff;
-            text-align: center;
-            padding: 1em 0;
-            border-radius: 8px;
-            width: 100%;
-        }
+  background-color: #577399;
+  color: #577399;
+  padding: 30px 0;
+}
 
-        footer a {
-            color: #fff;
-            text-decoration: none;
-        }
+.container {
+  max-width: 1200px;
+  margin: 0 auto;
+}
 
-        footer a:hover {
-            text-decoration: underline;
-        }
+.row {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.col-md-4 {
+  flex: 0 0 33.3333%;
+  max-width: 33.3333%;
+  padding: 0 15px;
+  box-sizing: border-box;
+}
+
+/* Gaya tautan */
+a {
+  color: #fff;
+  text-decoration: none;
+}
+
+a:hover {
+  text-decoration: underline;
+}
+
+/* Gaya sosial media ikon */
+.social-icons {
+  list-style: none;
+  padding: 0;
+  margin: 10px 0 0;
+}
+
+.social-icons li {
+  display: inline-block;
+  margin-right: 10px;
+}
+
+.social-icons a {
+  color: #fff;
+  font-size: 24px;
+}
+
+/* Gaya garis pemisah */
+hr {
+  border-color: #577399;
+  margin: 20px 0;
+}
+
+/* Gaya hak cipta */
+.text-center {
+  text-align: center;
+  font-size: 14px;
+}
+
+/* Gaya responsif */
+@media only screen and (min-width: 768px) {
+  .col-md-4 {
+    flex: 0 0 33.3333%;
+    max-width: 33.3333%;
+  }
+}
+
+/* Elemen di luar footer */
+main {
+  min-height: 100vh;
+}
+
     </style>
 </head>
 <body>
 
     <header>
-        <h1>Profil Saya</h1>
-        <h2>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quisque dignissim lorem vel eleifend. Integer bibendum fringilla leo, ac luctus felis efficitur non. Sed volutpat ut elit vel porta. Sed bibendum, libero vel hendrerit pellentesque, lorem arcu feugiat justo, eu scelerisque sem purus eget lectus. Nulla varius ante et tristique efficitur. Cras tincidunt eget odio eu laoreet. Vivamus eget ex nec lorem fringilla congue. Sed fermentum auctor metus, at finibus diam vestibulum sit amet. Vivamus a urna a ex interdum lacinia. Donec vel velit nec tellus lacinia varius.
-        </h2>
+        <nav>
+            <ul>
+              <li><a href="../contact us/contact.html">Back</a></li>
+  
+  
+            </ul>
+          </na
     </header>
 
     <div class="container">
@@ -152,7 +232,10 @@
             <div id="education" class="section">
                 <h3>Pendidikan</h3>
                 <ul>
-                    <li><strong>SMK</strong> - SMKN1 Kota Bengkulu, 2024</li>
+                    <li><strong>Lorem ipsum dolor sit amet</strong> - lorem ipsum</li>
+                </ul>
+                <ul>
+                    <li><strong>Lorem ipsum dolor sit amet</strong> - lorem ipsum</li>
                 </ul>
             </div>
 
@@ -185,8 +268,40 @@
     </div>
 
     <footer>
-        <p>Hak Cipta &copy; 2023 Profil Saya | Didesain oleh <a href="/prototye 1/test.html" target="_blank">Kami Bersama</a></p>
-    </footer>
+        <div class="container">
+          <div class="row">
+            <div class="col-md-4">
+              <h4>Hubungi Kami</h4>
+              <p>Email: info@example.com</p>
+              <p>Telepon: (123) 456-7890</p>
+            </div>
+            <div class="col-md-4">
+              <h4>Link Cepat</h4>
+              <ul>
+                <li><a href="/">Beranda</a></li>
+                <li><a href="/about">Tentang Kami</a></li>
+                <li><a href="/services">Layanan</a></li>
+                <li><a href="/contact">Hubungi Kami</a></li>
+              </ul>
+            </div>
+            <div class="col-md-4">
+              <h4>Ikuti Kami</h4>
+              <p>Temukan kami di media sosial:</p>
+              <ul class="social-icons">
+                <li><a href="#" target="_blank"><i class="fab fa-facebook"></i></a></li>
+                <li><a href="#" target="_blank"><i class="fab fa-twitter"></i></a></li>
+                <li><a href="#" target="_blank"><i class="fab fa-instagram"></i></a></li>
+              </ul>
+            </div>
+          </div>
+          <div class="row">
+            <div class="col-md-12">
+              <hr>
+              <p class="text-center">&copy; 2023 JSPTech. Hak Cipta Dilindungi.</p>
+            </div>
+          </div>
+        </div>
+      </footer>
 
     <script>
         function showSection(sectionId) {
@@ -198,7 +313,7 @@
             // Show the selected section
             document.getElementById(sectionId).style.display = 'block';
         }
-    </script>
+    </script>\
 
 </body>
 </html>
